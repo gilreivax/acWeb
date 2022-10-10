@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulários HTML5 - Exercício 4</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="lib/jasmine/jasmine_favicon.png"
+    />
+    <link rel="stylesheet" href="lib/jasmine/jasmine.css" />
+
+    <script src="lib/jasmine/jasmine.js"></script>
+    <script src="lib/jasmine/jasmine-html.js"></script>
+    <script src="lib/jasmine/boot.js"></script>
+
+    <!-- include spec files here... -->
+    <script src="spec/Form4Spec.js"></script>
+  </head>
+
+  <body>
+
+    <form id="form4" method="post">
+      <label for="rua">Rua: </label>
+      <input type="address" name="rua" id="rua" maxlength="100" required />
+
+      <br />
+      <br />
+
+      <label for="numerocasa">Número:</label>
+      <input type="number" name="numero" id="numerocasa" required />
+
+      <br />
+      <br />
+
+      <label for="uf">Estado</label>
+      <select name="estado" id="uf" required>
+        <option value=""></option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+      </select>
+
+      <br />
+      <br />
+      <input type="submit" name="b1" value="Salvar" />
+      <br />
+      <br />
+      <input type="reset" name="b2" value="Limpar" />
+    </form>
+  </body>
+</html>

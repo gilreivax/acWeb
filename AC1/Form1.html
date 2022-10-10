@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulários HTML5 - Exercício 1</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="lib/jasmine/jasmine_favicon.png"
+    />
+    <link rel="stylesheet" href="lib/jasmine/jasmine.css" />
+
+    <script src="lib/jasmine/jasmine.js"></script>
+    <script src="lib/jasmine/jasmine-html.js"></script>
+    <script src="lib/jasmine/boot.js"></script>
+
+    <script src="spec/Form1Spec.js"></script>
+  </head>
+
+  <body>
+    <form id="form1" method="post">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+
+      <label for="senha">senha:</label>
+      <input type="password" id="senha" name="senha" required />
+
+      <br />
+
+      <input type="checkbox" id="lembrar" name="lembrar" value="S" />
+      <label for="lembrar"> Lembre-se de mim</label><br />
+
+      <br />
+      <input type="submit" value="ENTRAR" />
+    </form>
+  </body>
+</html>

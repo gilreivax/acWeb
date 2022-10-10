@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulários HTML5 - Exercício 3</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="lib/jasmine/jasmine_favicon.png"
+    />
+    <link rel="stylesheet" href="lib/jasmine/jasmine.css" />
+
+    <script src="lib/jasmine/jasmine.js"></script>
+    <script src="lib/jasmine/jasmine-html.js"></script>
+    <script src="lib/jasmine/boot.js"></script>
+
+    <!-- include spec files here... -->
+    <script src="spec/Form3Spec.js"></script>
+  </head>
+
+  <body>
+    <form id="form3" method="post">
+      <label for="nome-completo"> Nome Completo:</label>
+      <input
+        type="text"
+        name="nome-completo"
+        id="nome-completo"
+        maxlength="120"
+        required
+      />
+
+      <br />
+      <label for="nascimento"></label>
+      <input type="date" name="nascimento" id="nascimento" required />
+
+      <br />
+      <label for="link"></label>
+      <br />
+      <input type="url" name="github" id="link" />
+
+      <br />
+      <label for="sexoM">Masculino</label>
+      <input type="radio" name="sexo" value="M" id="sexoM" required />
+      <br />
+      <label for="sexoF">Feminino</label>
+
+      <input type="radio" name="sexo" value="F" id="sexoF" required />
+
+      <input type="submit" value="Salvar" />
+    </form>
+  </body>
+</html>
